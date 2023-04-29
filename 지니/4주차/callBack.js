@@ -9,6 +9,11 @@ function fetchUser() {
     //동기적 약속, 비동기적 실행 방법
 }
 
+
+
+
+
+
 const user = fetchUser();
 user.then(console.log);
 console.log(user);
