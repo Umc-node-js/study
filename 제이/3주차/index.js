@@ -1,14 +1,36 @@
-const add = (a, b) => {
-    return a + b;
-};
+// readline
+/*
+const readLine = require("readline");
 
-const a = () => {
-    if (10 == 2) {
-        console.log('say hi')
-    } else {
-        console.log(' ')
-    }
-    console.log();
-}
-// 단축키 alt+shift+R 똑같은 줄 복붙
-// command D 선택한 단어 동일하게 변경하기
+const rl = readLine.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+rl.question("What is your name? ", (answer) => {
+  console.log("Hello " + answer);
+
+  rl.close();
+});
+*/
+
+// file system
+/*
+const fs = require("fs");
+
+// 텍스트 파일 생성
+// fs.writeFileSync("./hello.txt", "This is an UMC Assignment!");
+
+// 파일 읽기
+const data = fs.readFileSync("./hello.txt", { encoding: "utf-8" });
+console.log(data);
+
+// 이어쓰기
+fs.appendFileSync("./hello.txt", "\nWelcome!");
+*/
+
+// readline-sync
+const readline = require("readline-sync");
+
+const name = readline.question("What is your name?\n");
+console.log(name);
